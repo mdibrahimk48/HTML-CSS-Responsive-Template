@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 980px;
+  background: #f3f4f6;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-logo_area {
+  overflow: hidden;
+  padding: 40px 10px;
+}
+
+.logo {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.address_area {
+  width: 300px;
+  float: right;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+.address_area a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-top: 5px;
+}
+
+.menu_area ul {
+  background: green;
+  list-style: none;
+}
+
+.menu_area ul li {
+  display: inline;
+  border-right: 1px dotted #fff;
+}
+
+.menu_area ul li:last-child {
+  border-right: none;
+}
+
+.menu_area ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+#hero {
+  background-image: url(images/hero_img.jpg);
+  height: 352px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5% 3%;
+}
+
+.hero_content {
+  width: 65%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.hero_content h2 {
+  font-size: 40px;
+  line-height: 90px;
+}
+
+.hero_content p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.hero_content button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+
+.hero_content button:hover {
+  background: blue;
+}
+
+/* 
+Sidebar-Content
+ */
+
+.sidebar {
+  width: 220px;
+  float: left;
+  background-color: gray;
+}
+
+.sidebar_menu ul {
+  list-style: none;
+}
+
+.sidebar_menu ul li {
+  border-bottom: 1px dashed #fff;
+}
+
+.sidebar_menu ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar_menu ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+#content {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.content_area {
+  width: 726px;
+  float: left;
+  margin: 0 15px;
+  background: gray;
+  border: 2px solid #f3f4f6;
+}
+
+.single_content {
+  margin-bottom: 10px;
+  color: #000;
+  padding: 15px 10px;
+}
+
+.single_content h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.single_content p {
+  line-height: 1.4;
+}
+
+.footer_top {
+  overflow: hidden;
+  background: #444545;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.single_footer_widget {
+  width: 30%;
+  padding: 0 0.5%;
+  float: left;
+  margin-left: 1.5%;
+}
+
+.single_footer_widget h2 {
+  position: relative;
+}
+
+.single_footer_widget h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  border-bottom: 3px solid;
+}
+
+.single_footer_widget h2::before {
+  position: absolute;
+  content: "";
+  right: 100px;
+  bottom: 0;
+  width: 35%;
+  border-bottom: 8px solid;
+  margin-bottom: -3px;
+}
+
+.footer_bottom {
+  background-color: green;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 760px;
+  }
+  .hero_content h2 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .hero_content p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .hero_content button {
+    padding: 7px 16px;
+    font-size: 15px;
+  }
+  .sidebar {
+    width: 170px;
+  }
+  .content_area {
+    width: 556px;
+  }
+  .single_footer_widget h2 {
+    margin-bottom: 10px;
+  }
+  .single_footer_widget p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Device */
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 310px;
+  }
+  .logo {
+    width: 300px;
+    float: none;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .address_area {
+    width: 240px;
+    float: none;
+    margin-top: 20px;
+  }
+  .menu_area ul li a {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .hero_content h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .hero_content p {
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .hero_content {
+    width: 75%;
+  }
+  #hero {
+    background-size: cover;
+  }
+  .sidebar {
+    width: 310px;
+    margin-bottom: 15px;
+  }
+  .content_area {
+    width: 310px;
+    margin: 0;
+  }
+  .single_footer_widget {
+    width: 95%;
+    padding: 0 1%;
+    float: none;
+  }
+}
